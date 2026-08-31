@@ -14,7 +14,7 @@ covered by tests in `test/math.test.js`. Run them locally with:
 npm test
 ```
 
-## Expected (healthy) CI behaviour
+## Expected (healthy) CI 
 
 The workflow at `.github/workflows/ci.yml` has **two jobs**:
 
