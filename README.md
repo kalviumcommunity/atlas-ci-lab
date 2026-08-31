@@ -5,7 +5,7 @@ A tiny Node.js app used for a **CI/CD debugging exercise** with GitHub Actions.
 > ⚠️ **This repository is intentionally broken.** It contains **three planted faults**.
 > Your task is to fix them so the CI pipeline turns **fully green** on push.
 
-## What the app does
+## What the app does   
 
 `src/math.js` exports three pure functions — `add`, `isEven`, and `formatName` —
 covered by tests in `test/math.test.js`. Run them locally with:
