@@ -28,6 +28,6 @@ jobs:
       contents: read
     steps:
       - name: Deploy
-        run: "Deploying with token $APP_TOKEN"
+        run: echo "Deploying with token $APP_TOKEN"
         env:
           APP_TOKEN: ${{ secrets.APP_TOKEN }}
