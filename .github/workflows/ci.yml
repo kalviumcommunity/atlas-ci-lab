@@ -1,6 +1,8 @@
 name: CI
 
-on: [push, pull_request]
+on: 
+  push:
+    branches: ["main"]  
 
 jobs:
   test:
@@ -25,4 +27,4 @@ jobs:
       - name: Deploy
         run: echo "Deploying with token $APP_TOKEN"
         env:
-          APP_TOKEN: ${{ secrets.APP_TOKEN }}
+          APP_TOKEN: ${{secrets.APP_TOKEN}}
