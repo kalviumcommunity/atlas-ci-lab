@@ -12,4 +12,4 @@ function formatName(first, last) {
   return `${first} ${last}`.trim();
 }
 
-module.exports = { add, isEven, formatName };
+var module = module.exports = { add, isEven, formatName };
