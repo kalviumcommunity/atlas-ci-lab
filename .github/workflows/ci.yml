@@ -16,7 +16,7 @@ jobs:
       - name: Run tests
         run: npm test
 
-  deploy-check:
+  deploy-check: 
     needs: test
     runs-on: ubuntu-latest
     permissions:
