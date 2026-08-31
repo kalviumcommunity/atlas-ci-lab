@@ -1,8 +1,12 @@
 name: CI
 
-on: [push, pull_request]
+on: 
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
-jobs:
+jobs: 
   test:
     runs-on: ubuntu-latest
     steps:
@@ -10,7 +14,8 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          cache: npm
+        node-version: '20'
       - name: Install dependencies
         run: npm install
       - name: Run tests
