@@ -5,8 +5,6 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
-    permissions:
-    contents: read
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node
@@ -28,4 +26,3 @@ jobs:
         run: echo "Deploying with token $APP_TOKEN"
         env:
           APP_TOKEN: ${{ secrets.APP_TOKEN }}
-
