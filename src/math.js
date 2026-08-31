@@ -1,4 +1,5 @@
 // Tiny pure utility functions used by the CI lab.
+// Trigering Github Actions CI
 
 function add(a, b) {
   return a + b;
