@@ -24,3 +24,7 @@ jobs:
         run: echo "Deploying with token $APP_TOKEN"
         env:
           APP_TOKEN: ${{ secrets.APP_TOKEN }}
+    permissions: 
+      contents: read
+      id-token: write
+    
