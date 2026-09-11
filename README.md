@@ -43,3 +43,6 @@ produce a **fully green** run: both `test` and `deploy-check` pass.
    expectation — do **not** delete or skip the test.
 3. **Secret & permissions** — the `deploy-check` job references the secret
    incorrectly and is missing a minimal `permissions:` block.
+
+
+......
