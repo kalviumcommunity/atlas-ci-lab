@@ -23,4 +23,4 @@ jobs:
       - name: Deploy
         run: echo "Deploying with token $APP_TOKEN"
         env:
-          APP_TOKEN: ${{ secrets.APP_TOK }}
+          APP_TOKEN: ${{ secrets.APP_TOKEN }}
