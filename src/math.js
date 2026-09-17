@@ -1,7 +1,7 @@
 // Tiny pure utility functions used by the CI lab.
 
 function add(a, b) {
-  return a - b;
+  return a + b;
 }
 
 function isEven(n) {
