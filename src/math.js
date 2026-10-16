@@ -1,7 +1,6 @@
-// Tiny pure utility functions used by the CI lab.
 
 function add(a, b) {
-  return a - b;
+  return a + b;
 }
 
 function isEven(n) {
@@ -9,7 +8,7 @@ function isEven(n) {
 }
 
 function formatName(first, last) {
-  return `${first} ${last}`.trim();
+  return `${first} ${last}`;
 }
 
 module.exports = { add, isEven, formatName };
